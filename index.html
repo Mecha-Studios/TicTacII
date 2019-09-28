@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TicTacII</title>
+        <link rel="stylesheet" href="design.css">
+    </head>
+    <body>
+        <div id="topnav">
+            <h1>TicTacII[BETA]</h1>
+        </div>
+        <div style="text-align: center">
+            <table class="gametable">
+                <tr class="row">
+                    <input type="text" id="box1" class="ticbox"/>
+                    <input type="text" id="box2" class="ticbox"/>
+                    <input type="text" id="box3" class="ticbox"/>
+                </tr>
+            </table>
+            <table class="gametable">
+                <tr class="row">
+                    <input type="text" id="box4" class="ticbox"/>
+                    <input type="text" id="box5" class="ticbox"/>
+                    <input type="text" id="box6" class="ticbox"/>
+                </tr>
+            </table>
+            <table class="gametable">
+                <tr class="row">
+                    <input type="text" id="box7" class="ticbox"/>
+                    <input type="text" id="box8" class="ticbox"/>
+                    <input type="text" id="box9" class="ticbox"/>
+                </tr>
+            </table>
+            <button onclick="newGame()">New Game</button>
+            <button onclick="checkWinner()">Check Winner</button>
+            <div id="winnertxt">
+
+            </div>
+        </div>
+        <script src="game.js"></script>
+    </body>
+</html>

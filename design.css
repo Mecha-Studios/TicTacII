@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+#topnav {
+    color: white;
+    background-color: #333;
+    z-index: 10;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+}
+
+.ticbox{
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.gametable{
+    display: table;
+}
+
+.row{
+    display: table-row;
+}
