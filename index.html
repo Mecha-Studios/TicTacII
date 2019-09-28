@@ -30,10 +30,15 @@
                     <input type="text" id="box9" class="ticbox"/>
                 </tr>
             </table>
-            <button onclick="newGame()">New Game</button>
+            <button onclick="newGame()">New Round</button>
             <button onclick="checkWinner()">Check Winner</button>
+            <button onclick="location.reload()">Reset Game</button>
             <div id="winnertxt">
 
+            </div>
+            <div style="color: white">
+                <h1 id="xscore">Score(X): 0</h1>
+                <h1 id="yscore">Score(O): 0</h1>
             </div>
         </div>
         <script src="game.js"></script>

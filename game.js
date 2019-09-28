@@ -10,27 +10,65 @@ var box9 = document.getElementById("box9");
 var winnertxt = document.getElementById("winnertxt");
 winnertxt.style.fontSize = "72px";
 winnertxt.style.color = "white";
+var scorex = 0;
+var scorey = 0;
+var xscoree = document.getElementById("xscore");
+var yscoree = document.getElementById("yscore");
 
 function checkWinner(){
     if(box1.value === "x" && box2.value === "x" && box3.value === "x"){
         winnertxt.innerHTML = "X Wins!";
+        scorex++;
     } else if(box1.value === "x" && box4.value === "x" && box7.value === "x"){
         winnertxt.innerHTML = "X Wins!";
+        scorex++;
     } else if(box1.value === "x" && box5.value === "x" && box9.value === "x"){
         winnertxt.innerHTML = "X Wins!";
+        scorex++;
     } else if(box2.value === "x" && box5.value === "x" && box8.value === "x"){
         winnertxt.innerHTML = "X Wins!";
+        scorex++;
+    } else if(box3.value === "x" && box6.value === "x" && box9.value === "x"){
+        winnertxt.innerHTML = "X Wins!";
+        scorex++;
+    } else if(box3.value === "x" && box5.value === "x" && box7.value === "x"){
+        winnertxt.innerHTML = "X Wins!";
+        scorex++;
+    } else if(box4.value === "x" && box5.value === "x" && box6.value === "x"){
+        winnertxt.innerHTML = "X Wins!";
+        scorex++;
+    } else if(box7.value === "x" && box8.value === "x" && box9.value === "x"){
+        winnertxt.innerHTML = "X Wins!";
+        scorex++;
     } else if(box1.value === "o" && box2.value === "o" && box3.value === "o"){
         winnertxt.innerHTML = "O Wins!";
+        scorey++;
     } else if(box1.value === "o" && box4.value === "o" && box7.value === "o"){
         winnertxt.innerHTML = "O Wins!";
+        scorey++;
     } else if(box1.value === "o" && box5.value === "o" && box9.value === "o"){
         winnertxt.innerHTML = "O Wins!";
+        scorey++;
     } else if(box2.value === "o" && box5.value === "o" && box8.value === "o"){
         winnertxt.innerHTML = "O Wins!";
+        scorey++;
+    } else if(box3.value === "o" && box6.value === "o" && box9.value === "o"){
+        winnertxt.innerHTML = "O Wins!";
+        scorey++;
+    } else if(box3.value === "o" && box5.value === "o" && box7.value === "o"){
+        winnertxt.innerHTML = "O Wins!";
+        scorey++;
+    } else if(box4.value === "o" && box5.value === "o" && box6.value === "o"){
+        winnertxt.innerHTML = "O Wins!";
+        scorey++;
+    } else if(box7.value === "o" && box8.value === "o" && box9.value === "o"){
+        winnertxt.innerHTML = "O Wins!";
+        scorey++;
     } else{
         winnertxt.innerHTML = "No Winner!";
     }
+    xscoree.innerHTML = "Score(X): " + scorex;
+    yscoree.innerHTML = "Score(O): " + scorey;
 }
 
 function newGame(){
