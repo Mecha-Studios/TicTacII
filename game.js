@@ -68,7 +68,38 @@ function checkWinner(){
         winnertxt.innerHTML = "No Winner!";
     }
     xscoree.innerHTML = "Score(X): " + scorex;
+    console.log("Score(X): " + scorex);
     yscoree.innerHTML = "Score(O): " + scorey;
+    console.log("Score(O): " + scorey);
+}
+
+function startGame(){
+    box1.disabled = false;
+    box2.disabled = false;
+    box3.disabled = false;
+    box4.disabled = false;
+    box5.disabled = false;
+    box6.disabled = false;
+    box7.disabled = false;
+    box8.disabled = false;
+    box9.disabled = false;
+    timer();
+    document.getElementById('reset').disabled = false;
+    document.getElementById('newround').disabled = false;
+    document.getElementById('checkwinner').disabled = false;
+}
+
+var seconds = 120;
+
+function timer(){
+    var timer = document.getElementById("timer");
+    setInterval(function(){
+        timer.innerHTML = "Time: " + seconds--;
+        if(seconds === 0){
+            stop();
+            checkWinner;
+        }
+    }, 1000);
 }
 
 function newGame(){
@@ -82,4 +113,5 @@ function newGame(){
     box8.value = '';
     box9.value = '';
     winnertxt.innerHTML = '';
+    seconds = 120;
 }

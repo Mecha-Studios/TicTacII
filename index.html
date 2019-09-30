@@ -8,31 +8,35 @@
         <div id="topnav">
             <h1>TicTacII[BETA]</h1>
         </div>
+        <div id="timerdiv" style="color: white; text-align:center;">
+            <button onclick="startGame(); this.style.display = 'none';">Start Game</button>
+            <h1 id="timer"></h1>
+        </div>
         <div style="text-align: center">
             <table class="gametable">
                 <tr class="row">
-                    <input type="text" id="box1" class="ticbox"/>
-                    <input type="text" id="box2" class="ticbox"/>
-                    <input type="text" id="box3" class="ticbox"/>
+                    <input disabled type="text" id="box1" class="ticbox"/>
+                    <input disabled type="text" id="box2" class="ticbox"/>
+                    <input disabled type="text" id="box3" class="ticbox"/>
                 </tr>
             </table>
             <table class="gametable">
                 <tr class="row">
-                    <input type="text" id="box4" class="ticbox"/>
-                    <input type="text" id="box5" class="ticbox"/>
-                    <input type="text" id="box6" class="ticbox"/>
+                    <input disabled type="text" id="box4" class="ticbox"/>
+                    <input disabled type="text" id="box5" class="ticbox"/>
+                    <input disabled type="text" id="box6" class="ticbox"/>
                 </tr>
             </table>
             <table class="gametable">
                 <tr class="row">
-                    <input type="text" id="box7" class="ticbox"/>
-                    <input type="text" id="box8" class="ticbox"/>
-                    <input type="text" id="box9" class="ticbox"/>
+                    <input disabled type="text" id="box7" class="ticbox"/>
+                    <input disabled type="text" id="box8" class="ticbox"/>
+                    <input disabled type="text" id="box9" class="ticbox"/>
                 </tr>
             </table>
-            <button onclick="newGame()">New Round</button>
-            <button onclick="checkWinner()">Check Winner</button>
-            <button onclick="location.reload()">Reset Game</button>
+            <button disabled id="newround" onclick="newGame()">New Round</button>
+            <button disabled id="checkwinner" onclick="checkWinner()">Check Winner</button>
+            <button disabled id="reset" onclick="location.reload()">Reset Game</button>
             <div id="winnertxt">
 
             </div>
