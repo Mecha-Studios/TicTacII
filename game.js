@@ -64,8 +64,6 @@ function checkWinner(){
     } else if(box7.value === "o" && box8.value === "o" && box9.value === "o"){
         winnertxt.innerHTML = "O Wins!";
         scorey++;
-    } else{
-        winnertxt.innerHTML = "No Winner!";
     }
     xscoree.innerHTML = "Score(X): " + scorex;
     console.log("Score(X): " + scorex);
@@ -97,7 +95,7 @@ function timer(){
         timer.innerHTML = "Time: " + seconds--;
         if(seconds === 0){
             stop();
-            checkWinner;
+            checkWinner();
         }
     }, 1000);
 }
